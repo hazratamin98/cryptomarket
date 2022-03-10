@@ -25,11 +25,8 @@
   grid-template-columns: repeat(3, 1fr);
   margin-top: 20px auto;
 }
-.cryptoDisplay {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   flex-direction: column;
+.coin:hover {
+  margin-top: 1rem;
 }
 
 .coin {
@@ -72,5 +69,9 @@ button {
     grid-template-columns: 1fr;
     margin: auto;
     align-items: center;
+  }
+  .coin {
+    width: 220px;
+    height: 200px;
   }
 }

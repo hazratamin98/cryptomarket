@@ -27,6 +27,7 @@ const Card = () => {
   })
   const handleClear = () => {
     setSearchText("")
+    searchText("")
   }
 
   return (

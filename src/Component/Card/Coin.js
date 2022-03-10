@@ -7,7 +7,7 @@ const cx = classNames.bind(styles)
 const Coin = ({ name, icon, price, symbol }) => {
   return (
     <div className={cx("coin")}>
-      <h1>Name : {name}</h1>
+      <h1> {name}</h1>
       <img src={icon} alt="icon" />
       {price < 10 ? (
         <h3 className={styles.red}> {price.toFixed(2)}%</h3>
