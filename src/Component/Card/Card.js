@@ -5,9 +5,7 @@ import Coin from "./Coin"
 
 import styles from "./Card.module.scss"
 const cx = classNames.bind(styles)
-// {
-//   data, setSearchText;
-// }
+
 const Card = () => {
   const [listOfCoin, setListOfCoin] = useState([])
   const [searchText, setSearchText] = useState("")
@@ -27,6 +25,9 @@ const Card = () => {
   let filtercoin = listOfCoin.filter((coin) => {
     return coin.name.toLowerCase().includes(searchText.toLowerCase())
   })
+  const handleClear = () => {
+    setSearchText("")
+  }
 
   return (
     <div className={cx("cryptoHeader")}>
@@ -37,6 +38,7 @@ const Card = () => {
           setSearchText(e.target.value)
         }}
       />
+      <button onClick={handleClear}>Clear</button>
       <div className={cx("cryptoDisplay")}>
         {filtercoin.map((coin, i) => {
           return (

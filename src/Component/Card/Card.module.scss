@@ -34,7 +34,7 @@
 
 .coin {
   width: 350px;
-  height: 300px;
+  height: 350px;
   background-color: rgb(36, 36, 36);
   color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -45,4 +45,32 @@
 
 .coin img {
   height: 100px;
+}
+
+button {
+  padding: 1rem 1rem;
+  background-color: green;
+  margin-left: 3rem;
+}
+.red {
+  color: red;
+}
+.green {
+  color: blue;
+}
+
+@media screen and (max-width: 800px) {
+  .cryptoDisplay {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cryptoDisplay {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    align-items: center;
+  }
 }
