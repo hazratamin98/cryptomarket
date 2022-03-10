@@ -24,13 +24,15 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 20px auto;
+  align-items: center;
+  justify-items: center;
 }
 .coin:hover {
   margin-top: 1rem;
 }
 
 .coin {
-  width: 350px;
+  width: 300px;
   height: 350px;
   background-color: rgb(36, 36, 36);
   color: white;
@@ -56,10 +58,16 @@ button {
   color: blue;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .cryptoDisplay {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  .coin {
+    width: 220px;
+    height: 300px;
   }
 }
 
@@ -67,11 +75,12 @@ button {
   .cryptoDisplay {
     display: grid;
     grid-template-columns: 1fr;
-    margin: auto;
+
     align-items: center;
+    justify-items: center;
   }
   .coin {
     width: 220px;
-    height: 200px;
+    height: 300px;
   }
 }
