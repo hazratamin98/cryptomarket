@@ -26,9 +26,10 @@
   margin-top: 20px auto;
   align-items: center;
   justify-items: center;
+  transition: 1s;
 }
 .coin:hover {
-  margin-top: 1rem;
+  transform: scale(0.9);
 }
 
 .coin {

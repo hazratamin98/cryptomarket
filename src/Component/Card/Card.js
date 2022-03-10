@@ -25,9 +25,9 @@ const Card = () => {
   let filtercoin = listOfCoin.filter((coin) => {
     return coin.name.toLowerCase().includes(searchText.toLowerCase())
   })
+
   const handleClear = () => {
     setSearchText("")
-    searchText("")
   }
 
   return (
